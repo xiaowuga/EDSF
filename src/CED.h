@@ -70,17 +70,17 @@ public:
 
 
 public:
-    float sharpAngle = 25;
+    float sharpAngle = 70;
     double minimum_edge_length = 15;
     double minimum_edge_score = 0.35;
     double th_lsr = 3, th_dis = 3;
-    double minimum_ellipse_score1 = 0.55;
+    double minimum_ellipse_score1 = 0.3;
     double minimum_ellipse_score2 = 0.35;
-    double remain_score = 0.69;
+    double remain_score = 0.65;
     double inlier_dis = 1.5;
-    double cluster_dis = 20;
-    int sampleNum = 360, radius = 3;
-    double epsilon = 1.5;
+    double cluster_dis = 10;
+    int sampleNum = 720, radius = 3;
+    double epsilon = 0.8;
     int threads = 8;
 
 private:

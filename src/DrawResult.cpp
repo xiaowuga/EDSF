@@ -143,11 +143,12 @@ cv::Mat CED::drawEllipsesAfterCluster(const cv::Mat &img) {
     cv::Mat tmp = img.clone();
 //    std::cout << clustered_ellipse.size() << std::endl;
     int ct = 0;
+    std::cout << clustered_ellipse.size() << std::endl;
     for(auto e : clustered_ellipse) {
         int r = rand() % 256;
         int g = rand() % 256;
         int b = rand() % 256;
-        cv::Scalar ellipseColor = cv::Scalar(0, 0, 255);
+        cv::Scalar ellipseColor = cv::Scalar(0, 255, 0);
         ellipse(tmp, e, ellipseColor, 2);
 //        std::cout << clustered_ellipse_score[ct++] <<std::endl;
 //        cv::imshow("tmp", tmp);
